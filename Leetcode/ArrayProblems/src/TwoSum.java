@@ -18,7 +18,6 @@ public class TwoSum { //Brute force solution
             for (int element = start + 1; element < nums.length; element++) {
                 if (nums[start] + nums[element] == target) {
                     return new int[] {start, element};
-
                 }
             }
         }

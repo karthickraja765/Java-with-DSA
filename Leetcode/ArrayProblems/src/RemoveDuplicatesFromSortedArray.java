@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 
-public class RemoveDuplicatesFromSortedArray { //Brute force
+public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
         int ans = removeDuplicates(nums);
         System.out.println(ans);
     }
-    static int removeDuplicates(int[] nums) {
+
+    // Leetcode: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+    static int removeDuplicates(int[] nums) { // Brute force
        if (nums.length == 0) {
            return 0;
        }

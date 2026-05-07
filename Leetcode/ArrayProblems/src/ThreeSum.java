@@ -49,8 +49,7 @@ public class ThreeSum {
 
                 if (sum < 0) {
                     low++;
-                }
-                else if (sum > 0) {
+                } else if (sum > 0) {
                     high--;
                 } else {
                     Answer.add(Arrays.asList(nums[i], nums[low], nums[high]));

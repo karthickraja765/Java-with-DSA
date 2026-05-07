@@ -2,11 +2,12 @@ import java.util.Arrays;
 
 public class PlusOne {
     public static void main(String[] args) {
-        int[] digits = {1,2,3,9};
+        int[] digits = {4,3,2,1};
         int[] ans = plusOne1(digits);
         System.out.println(Arrays.toString(ans));
     }
 
+    // Leetcode: https://leetcode.com/problems/plus-one/
     static int[] plusOne(int[] digits) { //Brute force
         int num = 0;
 
@@ -33,7 +34,7 @@ public class PlusOne {
             digits[i] = 0;
         }
         int[] result = new int[digits.length + 1];
-        result[0] = 1;
+        result[0] = 1; // edge case for digit: 9 = [1, 0]
         return result;
     }
 }

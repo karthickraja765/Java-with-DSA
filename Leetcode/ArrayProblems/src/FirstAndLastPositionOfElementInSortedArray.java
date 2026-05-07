@@ -8,6 +8,8 @@ public class FirstAndLastPositionOfElementInSortedArray {
         System.out.println(Arrays.toString(ans));
     }
 
+
+    // Leetcode: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
     static int[] searchRange(int[] nums, int target) {
         int[] answer = {-1, -1};
 

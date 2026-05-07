@@ -14,9 +14,11 @@ public class MatrixRotation {
         boolean ans = findRotation(mat, target);
         System.out.println(ans);
     }
+
+    // Leetcode: https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
     static boolean findRotation(int[][] mat, int[][] target) {
         for (int i = 0; i < 4; i++) {
-            boolean same = true;
+            boolean same = true; // Assume matrices are equal initially.
             //Checking mat and target are equal or not
             for (int j = 0; j < mat.length; j++) {
                 for (int k = 0; k < mat[0].length; k++) {
@@ -30,10 +32,11 @@ public class MatrixRotation {
                 }
             }
             if (same) return true;
-            rotate90(mat);
+            rotate90(mat); // if same is false. This will run
         }
         return false;
     }
+
     static int[][] rotate90(int[][] mat) {
         //Transpose:
         for (int rows = 0; rows < mat.length; rows++) {

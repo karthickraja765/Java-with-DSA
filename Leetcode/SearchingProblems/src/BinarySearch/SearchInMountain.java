@@ -7,6 +7,7 @@ public class SearchInMountain {
         System.out.println(findInMountainArray(mountainArr, target));
 
     }
+
     static int findInMountainArray(int[] mountainArr, int target) {
         int peak = peakelement(mountainArr);
 
@@ -23,7 +24,7 @@ public class SearchInMountain {
         while (start < end) {
             int mid = start + (end - start) / 2;
 
-            if (mountainArr[mid] > mountainArr[mid + 1]) { //3,4,5,3,1
+            if (mountainArr[mid] > mountainArr[mid + 1]) { // 3,4,5,3,1
                 end = mid;
             } else {
                 start = mid + 1;

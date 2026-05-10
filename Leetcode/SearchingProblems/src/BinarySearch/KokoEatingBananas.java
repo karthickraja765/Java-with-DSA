@@ -8,7 +8,8 @@ public class KokoEatingBananas {
 
     }
 
-    static int minEatingSpeedBrute(int[] piles, int h) { //Brute force
+    // https://leetcode.com/problems/koko-eating-bananas/
+    static int minEatingSpeed0(int[] piles, int h) { //Brute force
         int max = 0;
         for (int pile : piles) {
             max = Math.max(max, pile);
@@ -29,20 +30,20 @@ public class KokoEatingBananas {
         return -1;
     }
 
-    static int minEatingSpeed(int[] piles, int h) { //Optimal solution
-        int minspeed = 0;
-
+    static int minEatingSpeed(int[] piles, int h) { //Optimal solution: o(n log n)
+        int minspeed = 1;
         int maxspeed = 0;
+
         for (int pile : piles) {
-            maxspeed = Math.max(maxspeed, pile);
+            maxspeed = Math.max(maxspeed, pile); // update the max speed to a max pile
         }
 
         while (minspeed < maxspeed) {
             int mid = minspeed + (maxspeed - minspeed) / 2;
 
-            if (isSpeedOkay(piles, h, mid)) {
+            if (isSpeedOkay(piles, h, mid)) { // if true, koko is eating at higher speed.
                 maxspeed = mid;
-            } else {
+            } else { // if false, koko is eating at slower speed.
                 minspeed = mid + 1;
             }
         }

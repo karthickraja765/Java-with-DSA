@@ -25,6 +25,7 @@ public class InfiniteArrayBS {
     static int binarysearch(int[] arr, int target, int start, int end) {
         while (start <= end) {
             int middle = start + (end - start) / 2;
+
             if (target > arr[middle]) {
                 start = middle + 1;
             } else if (target < arr[middle]) {

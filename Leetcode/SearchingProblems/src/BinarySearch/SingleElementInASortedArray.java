@@ -6,6 +6,7 @@ public class SingleElementInASortedArray {
         System.out.println(singleNonDuplicate(nums));
     }
 
+    // Leetcode: https://leetcode.com/problems/single-element-in-a-sorted-array/description/
     static int singleNonDuplicate(int[] nums) {
         int start = 0;
         int end = nums.length - 1;

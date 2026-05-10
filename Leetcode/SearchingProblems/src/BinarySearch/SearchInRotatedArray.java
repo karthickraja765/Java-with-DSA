@@ -8,7 +8,7 @@ public class SearchInRotatedArray {
         int pivot = findpivot(arr);
 
         // if pivot is not found, it means the array is not rotated
-        if(pivot == -1) {
+        if (pivot == -1) {
             // just do normal binary search.
             return Binarysearch(arr, target, 0, arr.length-1);
         }
@@ -25,7 +25,7 @@ public class SearchInRotatedArray {
     // this code will not work with duplicate values in the arrays
     static int findpivot(int[] arr) {
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length - 1;
 
         while(start <= end) {
             int mid = start + (end - start) / 2;
@@ -46,7 +46,7 @@ public class SearchInRotatedArray {
             if (arr[start] > arr[mid]) {
                 end = mid - 1;
             } else {
-                start = mid+ 1;
+                start = mid + 1;
             }
         }
         return -1;

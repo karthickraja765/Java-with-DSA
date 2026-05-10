@@ -7,6 +7,7 @@ public class SpiltArrayLargestSum {
         System.out.println(splitArray(nums, k));
     }
 
+    // Leetcode: https://leetcode.com/problems/split-array-largest-sum/description/
     static int splitArray(int[] nums, int k) {
         int start = 0;
         int end = 0;

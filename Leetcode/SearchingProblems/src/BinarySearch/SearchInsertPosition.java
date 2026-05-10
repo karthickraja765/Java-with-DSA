@@ -7,6 +7,8 @@ public class SearchInsertPosition {
         System.out.println(searchInsert(nums, target));
     }
 
+    // Leetcode: https://leetcode.com/problems/search-insert-position/description/
+
     static int searchInsert(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;

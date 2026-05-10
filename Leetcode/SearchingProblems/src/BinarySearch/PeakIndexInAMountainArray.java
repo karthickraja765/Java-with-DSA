@@ -1,0 +1,21 @@
+package BinarySearch;
+
+public class PeakIndexInAMountainArray {
+
+    // Leetcode: https://leetcode.com/problems/peak-index-in-a-mountain-array/
+
+    public int peakIndexInMountainArray(int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start < end) {
+            int middle = start + (end - start) / 2;
+            if (arr[middle] > arr[middle + 1]) {
+                end = middle;
+            } else {
+                start = middle + 1;
+            }
+        }
+        return end;
+    }
+}

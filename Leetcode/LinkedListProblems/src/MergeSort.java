@@ -1,6 +1,6 @@
 public class MergeSort {
 
-    // question 1: Using Merge Sort
+    // Sort List Using Merge Sort
     // https://leetcode.com/problems/sort-list/
 
     public ListNode sortList(ListNode head) {

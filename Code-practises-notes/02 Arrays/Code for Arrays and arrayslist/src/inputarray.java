@@ -24,7 +24,7 @@ public class inputarray {
             System.out.print(arr[i] + " ");  // prints the inputs
         }
 
-        for (int j : arr) {            // for every(each) element j in arr, print the element.
+        for (int j : arr) { // for every(each) element j in arr, print the element.
             System.out.print(j + " "); // enhanced for loop, here j represents the elements of the array arr
         }
 
@@ -32,15 +32,15 @@ public class inputarray {
 
 //      System.out.println(arr[5]); // index out of bound error.
 
-//        // array of objects
-//        String[] str = new String[5];
-//        for (int i = 0; i < 5; i++) {
-//            str[i] = in.next();
-//        }
-//        System.out.println(Arrays.toString(str));
-//
-//        //modifying
-//        str[1] = "Kæ.";
-//        System.out.println(Arrays.toString(str));
+        // array of objects
+        String[] str = new String[5];
+        for (int i = 0; i < 5; i++) {
+            str[i] = in.next();
+        }
+        System.out.println(Arrays.toString(str));
+
+        // modifying
+        str[1] = "K.";
+        System.out.println(Arrays.toString(str));
     }
 }

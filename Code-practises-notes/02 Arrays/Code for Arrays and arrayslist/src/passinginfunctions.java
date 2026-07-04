@@ -7,7 +7,7 @@ public class passinginfunctions {
         change(arr);
         System.out.println(Arrays.toString(arr));
     }
-    static void change(int[] arr){
+    static void change(int[] arr) {
         arr[0] = 999;
     }
 }

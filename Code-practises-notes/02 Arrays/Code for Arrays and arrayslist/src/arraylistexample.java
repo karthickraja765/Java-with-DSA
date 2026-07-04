@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class arraylistexample {
     public static void main(String[] args) {
-//        //syntax of array list
+        //syntax of array list
         ArrayList<Integer> list = new ArrayList<>(10);
 //        list.add(12);
 //        list.add(32);
@@ -22,7 +22,7 @@ public class arraylistexample {
 
 
         Scanner in = new Scanner(System.in);
-        // we can use for loop to this also//
+        // we can use for-loop to this.
         for (int i = 0; i < 5; i++) {
             int a  = in.nextInt();
             list.add(a); // or in.nextInt(list.add());
